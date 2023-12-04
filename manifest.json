@@ -5,7 +5,7 @@
   "manifest_version": 2,
   "content_security_policy": "script-src 'self' 'unsafe-eval' https://code.jquery.com/jquery-3.2.1.slim.min.js; object-src 'self'",
   "browser_action": {
-    "default_popup" : "pages/try1.html",
+    "default_popup" : "popup.html",
     "default_icon" : "assets/vernier-caliper-transparent.png"
   },
   "icons" : {

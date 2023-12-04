@@ -54,10 +54,13 @@
 }
 
 #kebab_icon {
-    margin-top: 23px;
+    margin-top: 10px;
     width: 17px;
     height: 17px;
-    margin: 0;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    
 }
 
 #send_heading {
