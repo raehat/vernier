@@ -1,0 +1,23 @@
+{
+  "name": "Vernier",
+  "version": "1.0.0",
+  "description" : "Vernier is a tool which can be used to make ethereum based transactions safely.",
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://code.jquery.com/jquery-3.2.1.slim.min.js; object-src 'self'",
+  "browser_action": {
+    "default_popup" : "pages/try1.html",
+    "default_icon" : "assets/vernier-caliper-transparent.png"
+  },
+  "icons" : {
+    "128" : "assets/vernier-caliper-transparent.png"
+  },
+  "permissions": ["activeTab", "http://localhost/*", "web3", "notifications"],  
+  "background": {
+    "scripts": ["bundle.js"],
+    "persistent": true
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }]
+}
